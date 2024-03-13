@@ -1,8 +1,11 @@
 ark
 base
 base-devel
+bash-completion
 bluez-utils
 calibre
+clipboard
+coreshot
 dolphin
 efibootmgr
 egl-wayland
@@ -15,7 +18,9 @@ google-chrome
 gparted
 grub
 gst-plugin-pipewire
+gvim
 htop
+ibus-bamboo
 ibus-unikey
 intel-media-driver
 intel-ucode
@@ -30,6 +35,7 @@ lightdm
 lightdm-slick-greeter
 linux
 linux-firmware
+man-db
 megasync
 microsoft-edge-stable-bin
 nano
@@ -46,10 +52,10 @@ pipewire-pulse
 plasma-meta
 plasma-wayland-session
 pomatez
+postman-bin
 smartmontools
 sof-firmware
 timeshift
-vim
 visual-studio-code-bin
 vlc
 vulkan-intel
