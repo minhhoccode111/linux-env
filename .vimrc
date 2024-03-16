@@ -1,12 +1,9 @@
+
 " Yank to system clipboard
 set clipboard=unnamed
-
 " jj in insert mode to enter normal mode
 inoremap jj <Esc>
-" remove 1 char before
-inoremap <C-h> <BS>
-" act like enter
-inoremap <C-m> <CR>
+
 " basics movement and jumping in normal mode
 nnoremap <C-h> ^
 nnoremap <C-l> $
@@ -18,12 +15,10 @@ nnoremap k gk
 nnoremap O o<Esc>
 " jump back to the last cursor position
 nnoremap K ``
-" d motion to delete inline
-nnoremap d<C-l> d$
-nnoremap d<C-h> d^
 " space in normal mode will be :
 nnoremap <Space> :
-" basics movement and jumping in normal mode
+
+" basics movement and jumping in visual mode
 vnoremap <C-h> ^
 vnoremap <C-l> $
 vnoremap <C-k> %
@@ -31,7 +26,13 @@ vnoremap <C-k> %
 vnoremap j gj
 vnoremap k gk
 " jump back to the last cursor position
-nnoremap K ``
+vnoremap K ``
+
+" basics movement and jumping in visual mode
+onoremap <C-h> ^
+onoremap <C-l> $
+onoremap <C-k> %
+
 
 " setting
 " Comments in Vimscript start with a `"`.
@@ -84,4 +85,6 @@ set noerrorbells visualbell t_vb=
 " Enable mouse support. You should avoid relying on this too much, but it can
 " sometimes be convenient.
 set mouse+=a
+" set spacing with tab to be 2
+set tabstop=2
 
