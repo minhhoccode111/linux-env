@@ -2,7 +2,10 @@
 
 This repo is used to quickly get setup any Linux machine with basic settings for `.bashrc`, `.vimrc`, and `.gitconfig`
 
-Optional: `alacritty.toml` and `.obsidian.vimrc`
+Optional files:
+
+- `alacritty.toml` (if you use Alacritty terminal)
+- `.obsidian.vimrc` (if you use Vim mode in Obsidian Note)
 
 ## Note
 
@@ -27,10 +30,12 @@ For other architecture and linux distro, check out another branch
 
 ```bash
 git clone git@github.com:minhhoccode111/dotfiles.git ~/dotfiles/
-# git checkout pc-ubuntu
+
+# cd ~/dotfiles/
+# git checkout pc-ubuntu # example
 ```
 
-## Backup existing files
+## Backup existing dot files
 
 ```bash
 mkdir ~/old_dotfiles
@@ -58,15 +63,21 @@ ln -s ~/dotfiles/alacritty.toml ~/.config/alacritty/alacritty.toml
 ln -s ~/dotfiles/obsidian.vimrc ~/Documents/current-obsidian/.obsidian.vimrc
 ```
 
-## Backup/restore pacman installed packages
+## Backup/restore pacman installed packages (optional)
 
-**Optional**
+Backup
 
 ```bash
 pacman -Qqe | grep -v "$(pacman -Qqm)" > ~/dotfiles/packages/installed_pacman.lst
 ```
 
+Restore
+
 ```bash
 cat ~/dotfiles/packages/installed_pacman.lst | xargs pacman -S --needed --noconfirm
 sudo pacman -Syu
 ```
+
+## Destroy symbolic links
+
+Just simply delete current symbolic link files and put files in `old_dotfiles` back to normal place
