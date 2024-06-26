@@ -47,16 +47,15 @@ mv ~/Documents/current-obsidian/.obsidian.vimrc ./obsidian.vimrc
 ## Create symbolic links
 
 ```bash
-cd ~/dotfiles
-ln -s ./bashrc ~/.bashrc
-ln -s ./gitconfig ~/.gitconfig
-ln -s ./vimrc ~/.vimrc
+ln -s ~/dotfiles/bashrc ~/.bashrc
+ln -s ~/dotfiles/gitconfig ~/.gitconfig
+ln -s ~/dotfiles/vimrc ~/.vimrc
 
 # NOTE: make sure ~/.config/alacritty/ dir existed
-ln -s ./alacritty.toml ~/.config/alacritty/alacritty.toml
+ln -s ~/dotfiles/alacritty.toml ~/.config/alacritty/alacritty.toml
 
 # NOTE: make sure ~/Documents/current-obsidian/ dir existed
-ln -s ./obsidian.vimrc ~/Documents/current-obsidian/.obsidian.vimrc
+ln -s ~/dotfiles/obsidian.vimrc ~/Documents/current-obsidian/.obsidian.vimrc
 ```
 
 ## Backup/restore pacman installed packages
