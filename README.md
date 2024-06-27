@@ -9,19 +9,19 @@ Optional files:
 
 ## Note
 
-This repo's `main` branch is setup for Arch with below architecture
+This `arch-lap` branch is setup for Arch with below architecture
 
 ```bash
 OS: Arch Linux x86_64
-Host: MS-7C82 1.0
-Kernel: 6.9.6-arch1-1
+Host: VivoBook_ASUSLaptop X431FA_S431FA 1.0
+Kernel: 6.9.5-arch1-1
 Shell: bash 5.2.26
 DE: Plasma 6.1.0
 WM: KWin
 Terminal: alacritty
-CPU: Intel i5-10400F (12) @ 4.300GHz
-GPU: NVIDIA GeForce RTX 2060 SUPER
-Memory: 0000MiB / 15931MiB
+CPU: Intel i5-8265U (8) @ 3.900GHz
+GPU: Intel WhiskeyLake-U GT2 [UHD Graphics 620]
+Memory: 0000MiB / 7688MiB
 ```
 
 For other architecture and linux distro, check out another branch
