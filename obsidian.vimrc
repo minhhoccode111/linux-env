@@ -23,7 +23,7 @@ imap <C-h> <BS>
 imap <C-m> <CR>
 
 " Enter Normal mode from Insert mode with jj
-inoremap jj <esc>
+inoremap jj <Esc>
 
 " Center cursor after moving screen
 nnoremap n nzzzv
@@ -43,11 +43,11 @@ onoremap K %
 vnoremap K %
 
 " Insert new line above and stay in Normal mode
-nnoremap O o<esc>
+nnoremap O o<Esc>
 
 " Select all with <C-a>
-inoremap <C-a> <esc>ggVG
-vnoremap <C-a> <esc>ggVG
+inoremap <C-a> <Esc>ggVG
+vnoremap <C-a> <Esc>ggVG
 nnoremap <C-a> ggVG
 
 " move line instead of paragraph

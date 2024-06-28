@@ -74,8 +74,7 @@ pacman -Qqe | grep -v "$(pacman -Qqm)" > ~/dotfiles/packages/installed_pacman.ls
 Restore
 
 ```bash
-cat ~/dotfiles/packages/installed_pacman.lst | xargs pacman -S --needed --noconfirm
-sudo pacman -Syu
+sudo pacman -S --needed - < ~/dotfiles/packages/installed_pacman.lst
 ```
 
 ## Destroy symbolic links
