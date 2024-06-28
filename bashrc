@@ -70,3 +70,4 @@ source ~/.bash_completion/alacritty
 # flex arch linux
 neofetch
 
+. "$HOME/.cargo/env"
